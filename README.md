@@ -105,7 +105,8 @@ This chart shows how the portfolio value changes over time for each asset: XAUUS
 This table reports the backtesting results of each asset. It shows portfolio value, profit/loss (cash and percentage), win rate, average profit/loss, maximum drawdown, volatility (σ), and number of trades. For example, wheat futures (ZW1!) produced a +4.52% return with 100% win rate, while AOT experienced a -24.30% loss with large drawdown.
 
 
- <img width="975" height="244" alt="image" src="https://github.com/user-attachments/assets/4262e451-9420-4908-a0fa-d6c8e4743c26" />
+
+<img width="975" height="244" alt="image" src="https://github.com/user-attachments/assets/4262e451-9420-4908-a0fa-d6c8e4743c26" />
 Figure 8. Return vs Sigma with Tangent Line
 The scatter plot shows the relationship between return (%) and volatility (σ) for individual assets. A polynomial fit (red curve) represents the general trend, while the tangent line (cyan) indicates the optimal trade-off between risk and return. The tangent point (purple X) highlights the portfolio with the highest Sharpe ratio.
 
@@ -116,5 +117,7 @@ The scatter plot shows the relationship between return (%) and volatility (σ) f
  
 <img width="975" height="238" alt="image" src="https://github.com/user-attachments/assets/a814fc77-ec76-4ab0-ba97-c3638545b7a4" />
 <img width="545" height="105" alt="image" src="https://github.com/user-attachments/assets/569bcb30-2ba2-4e49-87f1-eb21c946a118" />
+
+
 Figure 9. Efficient Frontier: MPT vs MDP (HJB)
 This figure compares Modern Portfolio Theory (MPT) with the Merton Dynamic Portfolio (MDP/HJB). The red curve shows the efficient frontier from static portfolios, while the dashed cyan line represents the Capital Market Line (CML). The tangent portfolio (purple star) and the MDP/HJB solution (blue dot) illustrate different approaches to achieving optimal portfolios.
