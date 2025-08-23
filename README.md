@@ -68,45 +68,45 @@ Good points:
 
 **Figure**
 <img width="975" height="328" alt="image" src="https://github.com/user-attachments/assets/1b5912fe-ff8e-4ef4-a8de-d0efad4ce581" />
-**Figure 1.** Example of fetching historical market data using tvDatafeed. 
+Figure 1. Example of fetching historical market data using tvDatafeed. 
 Assets include gold (XAUUSD), silver (XAGUSD), wheat futures (ZW1!), Thai stock (AOT), Brent oil futures (BRN1!), and SET50 index futures (S501!).
 
 
 <img width="975" height="321" alt="image" src="https://github.com/user-attachments/assets/e32267be-e1d4-4977-a688-d9e213851191" />
-**Figure 2.** Example of Optuna hyperparameter tuning log. 
+Figure 2. Example of Optuna hyperparameter tuning log. 
 Each line shows the trial number, objective value, and selected parameters. In this project, tuning was used to search for the best sequence length, hidden size, number of layers, dropout rate, learning rate, and epochs to optimize model performance.
 
 
 <img width="975" height="196" alt="image" src="https://github.com/user-attachments/assets/4ee22b54-cb7f-4152-b17e-d6adbebb231d" />
-**Figure 3.** Best Trial from Hyperparameter Tuning (Optuna)
+Figure 3. Best Trial from Hyperparameter Tuning (Optuna)
 The output shows the best hyperparameters found during Optuna tuning for the LSTM model. Parameters such as sequence length, hidden layer size, number of layers, dropout, learning rate, and thresholds are optimized. The best configuration achieved a profit               of +2.65% with low drawdown (−0.29%).
 
 
  <img width="975" height="182" alt="image" src="https://github.com/user-attachments/assets/1f2d496b-da5d-4186-b34c-4232492b0813" />
-**Figure 4.** Training Log for XAUUSD (Gold)
+Figure 4. Training Log for XAUUSD (Gold)
 The log displays the training process of the LSTM model on XAUUSD with the best parameters from tuning. The model runs for 610 epochs, and the training loss converges around 0.036, showing stable learning of price dynamics.
 
 
  <img width="975" height="245" alt="image" src="https://github.com/user-attachments/assets/68cc2ca5-aee4-42b6-b041-32c072e2de86" />
-**Figure 5.** Example of trading simulation with machine learning (XAGUSD). 
+Figure 5. Example of trading simulation with machine learning (XAGUSD). 
 The top panel shows trading signals: green markers indicate long entries and red markers indicate short entries.
 The dashed line represents the predicted next-step price.
 The bottom panel shows the equity curve, starting from the initial investment balance.
 
 
  <img width="975" height="234" alt="image" src="https://github.com/user-attachments/assets/87b3c173-0363-49bc-8f41-cd0462048fae" />
-**Figure 6.** Portfolio Value by Ticker
+Figure 6. Portfolio Value by Ticker
 This chart shows how the portfolio value changes over time for each asset: XAUUSD (gold), XAGUSD (silver), ZW1! (wheat), AOT, BRN1! (brent), and S501! (SET50 futures). The solid lines represent individual asset portfolios, while the dashed cyan line shows the expected (average) portfolio. Some assets, like ZW1! and S501!, perform steadily, while others such as AOT show a significant drop. This figure helps compare risk and return behavior across different assets.
 
 
 
 <img width="975" height="211" alt="image" src="https://github.com/user-attachments/assets/a34f5acf-2c83-4a3c-9e68-690504038b40" />
- **Figure 7.** Performance Summary Table
+ Figure 7. Performance Summary Table
 This table reports the backtesting results of each asset. It shows portfolio value, profit/loss (cash and percentage), win rate, average profit/loss, maximum drawdown, volatility (σ), and number of trades. For example, wheat futures (ZW1!) produced a +4.52% return with 100% win rate, while AOT experienced a -24.30% loss with large drawdown.
 
 
  <img width="975" height="244" alt="image" src="https://github.com/user-attachments/assets/4262e451-9420-4908-a0fa-d6c8e4743c26" />
-**Figure 8.** Return vs Sigma with Tangent Line
+Figure 8. Return vs Sigma with Tangent Line
 The scatter plot shows the relationship between return (%) and volatility (σ) for individual assets. A polynomial fit (red curve) represents the general trend, while the tangent line (cyan) indicates the optimal trade-off between risk and return. The tangent point (purple X) highlights the portfolio with the highest Sharpe ratio.
 
 
@@ -116,5 +116,5 @@ The scatter plot shows the relationship between return (%) and volatility (σ) f
  
 <img width="975" height="238" alt="image" src="https://github.com/user-attachments/assets/a814fc77-ec76-4ab0-ba97-c3638545b7a4" />
 <img width="545" height="105" alt="image" src="https://github.com/user-attachments/assets/569bcb30-2ba2-4e49-87f1-eb21c946a118" />
-**Figure 9.** Efficient Frontier: MPT vs MDP (HJB)
+Figure 9. Efficient Frontier: MPT vs MDP (HJB)
 This figure compares Modern Portfolio Theory (MPT) with the Merton Dynamic Portfolio (MDP/HJB). The red curve shows the efficient frontier from static portfolios, while the dashed cyan line represents the Capital Market Line (CML). The tangent portfolio (purple star) and the MDP/HJB solution (blue dot) illustrate different approaches to achieving optimal portfolios.
