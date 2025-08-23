@@ -1,6 +1,9 @@
 **Machine Learning for Trading and Portfolio Optimization using LSTM and Quantitative Methods**
 **Rak Kantarak**
+
 *Individual Interested Research*
+
+
 **1. Introduction**
 This project explores how modern machine learning can be combined with classical portfolio theory to support investment decisions. I build a simple Long–Short trading pipeline where an LSTM forecasts next-period prices using only two inputs price and RSI and then convert those forecasts into trading signals under explicit transaction costs (10 bps, i.e., 0.10%). Signals are backtested with next-bar execution on 4-hour data (annualization factor ≈ 1,560) across a small cross-asset universe (e.g., XAUUSD, XAGUSD, BRN1!, S501!, selected SET names) sourced via TradingView’s tvDatafeed.
 On top of the single-asset backtests, I apply portfolio analytics in two ways: (i)               a mean–variance layer to compute the efficient frontier and tangent (max-Sharpe) portfolio under bounds, and (ii) a simple HJB/Merton-style dynamic allocation that updates weights using exponentially weighted estimates of means and covariances. Hyperparameters of the LSTM (sequence length, hidden size, layers, dropout, learning rate, thresholds) are tuned with Optuna against a risk-aware objective (profit minus a penalty on drawdown).
